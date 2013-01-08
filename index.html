@@ -43,11 +43,11 @@
     <p>The following illustrates how to use the NuoDB DBD module in an application:</p>
 
     <pre><code>
-      use DBI;
-      my $dbh = DBI->connect("dbi:NuoDB:".$database.'@'.$host':'.$port, $username, $password, {schema => $schema});
-      my $sth = $dbh->prepare("SELECT 'one' FROM DUAL");
-      $sth->execute();
-      my ($value) = $sth->fetchrow_array();
+use DBI;
+my $dbh = DBI->connect("dbi:NuoDB:".$database.'@'.$host':'.$port, $username, $password, {schema => $schema});
+my $sth = $dbh->prepare("SELECT 'one' FROM DUAL");
+$sth->execute();
+my ($value) = $sth->fetchrow_array();
     </code></pre>
 
     <h3>Authors and Contributors</h3>
